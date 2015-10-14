@@ -1,8 +1,9 @@
 {
   "name": "css-class-acts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lamda function factories for adding, removing, & toggling a class on HTML Elements.",
   "main": "index.js",
+  "jsnext:main": "index.js",
   "scripts": {
     "build": "rollup test/test.js | babel | uglifyjs > test/test.dist.js"
   },
