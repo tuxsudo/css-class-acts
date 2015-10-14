@@ -1,0 +1,28 @@
+{
+  "name": "css-class-acts",
+  "version": "1.0.0",
+  "description": "Array(ish) Map functions that add/remove/toggle classes from an element",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup test/test.js | babel | uglifyjs > test/test.dist.js"
+  },
+  "keywords": [
+    "dom",
+    "class",
+    "vanillajs"
+  ],
+  "author": "Jared Anderson <@tuxsudo>",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "devDependencies": {
+    "uglifyjs": "^2.4.10"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "rollup": "^0.19.1"
+  }
+}
