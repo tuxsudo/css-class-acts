@@ -1,11 +1,12 @@
 {
   "name": "class-acts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lamda function factories for adding, removing, & toggling a class on HTML Elements.",
   "main": "index.js",
   "jsnext:main": "index.js",
   "scripts": {
-    "build": "rollup test/test.js | babel | uglifyjs > test/test.dist.js"
+    "build": "rollup examples/bundled/bundled.js | babel | uglifyjs -emc > examples/bundled/bundled.dist.js",
+    "test": "babel-node test/*.js | tap-spec"
   },
   "keywords": [
     "dom",
@@ -24,7 +25,10 @@
   },
   "devDependencies": {
     "babel": "^5.8.23",
+    "jsdom": "^6.5.1",
     "rollup": "^0.19.1",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.1",
     "uglifyjs": "^2.4.10"
   },
   "dependencies": {}
